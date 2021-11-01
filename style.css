@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&display=swap');
+
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex; /*to create a different layout for different screen sizes/devices*/
+    align-items: center; /*all ul items in center*/
+    list-style-type: none; /*remove the bullet points of ul*/
+    height: 60px; /*image size*/
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px; /*padding-top/bottom=0 padding-left/right=12*/
+}
+
+.brand img{
+    width: 38px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center; /*all .brand items in center*/
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    margin: 200px auto 0;
+    width: 80vw;
+    margin: 27px auto; /*auto to bring it in center*/
+    padding: 30px;
+    min-height: 52vh; /*1vh	is Relative to 1% of the height of the viewport*/
+    background: linear-gradient(0deg, #000, #262626);
+    color: white;
+}
+
+.container:before,
+.container:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.container:after{
+    filter: blur(15px);
+}
+
+@keyframes animate{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 500% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+.bottom{
+    position: sticky; /*Element is positioned based on the user's scroll position.*/
+    height: 25vh;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /*Aligns the flexible container's items when the items do not use all available space horizontally.*/
+    align-items: center;
+    flex-direction: column; /*The flexible items are displayed vertically, as a column*/
+}
+
+.icons{
+    margin-top: 14px;
+    cursor: pointer; /*The cursor changes to the hand cursor*/
+}
+
+#myProgressBar{
+    width: 80vw; /*1vw is Relative to 1% of the width of the viewport*/
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 30vw;
+    color: black;
+    margin: 12px 23px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 23px;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+}
+
+.songListPlay i{
+    margin: 0 10px;
+    cursor: pointer;
+}
