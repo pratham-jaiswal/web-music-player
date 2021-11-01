@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Music">Web Music</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>My Playlist</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1"> <!--cover image of song-->
+                    <span class="songName"></span>
+                    <span class="songListPlay"><i id="0" class="far songItemPlay fa-play-circle"></i></span> <!--song name & duration-->
+                </div>
+                <div class="songItem">
+                    <img alt="1"> <!--cover image of song-->
+                    <span class="songName"></span>
+                    <span class="songListPlay"><i id="1" class="far songItemPlay fa-play-circle"></i></span> <!--song name & duration-->
+                </div>
+                <div class="songItem">
+                    <img alt="1"> <!--cover image of song-->
+                    <span class="songName"></span>
+                    <span class="songListPlay"><i id="2" class="far songItemPlay fa-play-circle"></i></span> <!--song name & duration-->
+                </div>
+                <div class="songItem">
+                    <img alt="1"> <!--cover image of song-->
+                    <span class="songName"></span>
+                    <span class="songListPlay"><i id="3" class="far songItemPlay fa-play-circle"></i></span> <!--song name & duration-->
+                </div>
+                <div class="songItem">
+                    <img alt="1"> <!--cover image of song-->
+                    <span class="songName"></span>
+                    <span class="songListPlay"><i id="4" class="far songItemPlay fa-play-circle"></i></span> <!--song name & duration-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom"> 
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0"> <!--Song Control-->
+        <div class="icons">
+            <i id="previous" class="fas fa-2x fa-step-backward"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i id="next" class="fas fa-2x fa-step-forward"></i>
+            <!--fontawesome icons-->
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="1" id="gif"> <span id="masterSongName"></span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6f42fc440c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
