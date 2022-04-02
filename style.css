@@ -100,12 +100,12 @@ nav ul li{
 }
 
 #myProgressBar{
-    width: 80vw; /*1vw is Relative to 1% of the width of the viewport*/
+    width: 50vw; /*1vw is Relative to 1% of the width of the viewport*/
     cursor: pointer;
 }
 
 .songItem{
-    height: 50px;
+    height: 10vh;
     display: flex;
     background-color: white;
     width: 30vw;
@@ -117,8 +117,8 @@ nav ul li{
 }
 
 .songItem img{
-    width: 50px;
-    border-radius: 50%;
+    width: 10vh;
+    border-radius: 34px;
     margin-right: 23px;
 }
 
@@ -141,4 +141,26 @@ nav ul li{
 .songListPlay i{
     margin: 0 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .songItem{
+        width: 65vw;
+    }
+    
+    .container{
+        width: 70vw;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .songItem{
+        width: 85vw;
+        margin: 12px -20px;
+    }
+    
+    .container{
+        padding: 35px;
+    }
 }
