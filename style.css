@@ -152,6 +152,11 @@ nav ul li{
         width: 70vw;
         padding: 30px;
     }
+
+    .bottom{
+        height: 15vh;
+        background-color: rgba(0, 0, 0, 0.527);
+    }
 }
 
 @media screen and (max-width: 300px) {
