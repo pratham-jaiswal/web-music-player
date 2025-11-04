@@ -163,6 +163,36 @@ nav ul li {
     cursor: pointer;
 }
 
+/* Floating Patreon Button */
+#floating-patreon-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF424D;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+}
+
+#floating-patreon-btn:hover,
+#floating-patreon-btn:focus {
+    background-color: #e03e47;
+    outline: none;
+}
+
+#floating-patreon-btn span {
+    user-select: none;
+}
+
+
 /* Responsive design */
 @media screen and (max-width: 860px) {
     .songItemContainer {
